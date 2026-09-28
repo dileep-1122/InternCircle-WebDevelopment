@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pricing-section">
+
+        <h1>Choose Your Plan</h1>
+        <p class="subtitle">Simple pricing for everyone</p>
+
+        <div class="toggle-area">
+            <span>Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Yearly</span>
+        </div>
+
+        <div class="pricing-container">
+
+            <article class="card">
+                <h2>Basic</h2>
+                <p>For beginners</p>
+
+                <h3 class="price" data-monthly="₹199" data-yearly="₹1,999">
+                    ₹199
+                </h3>
+                <span class="period">/month</span>
+
+                <ul>
+                    <li>✓ 5 Projects</li>
+                    <li>✓ Basic Support</li>
+                    <li>✓ 5 GB Storage</li>
+                </ul>
+
+                <button>Choose Plan</button>
+            </article>
+
+            <article class="card popular">
+
+                <span class="badge">Popular</span>
+
+                <h2>Pro</h2>
+                <p>For professionals</p>
+
+                <h3 class="price" data-monthly="₹499" data-yearly="₹4,999">
+                    ₹499
+                </h3>
+                <span class="period">/month</span>
+
+                <ul>
+                    <li>✓ 20 Projects</li>
+                    <li>✓ Priority Support</li>
+                    <li>✓ 50 GB Storage</li>
+                </ul>
+
+                <button>Choose Plan</button>
+            </article>
+
+            <article class="card">
+                <span class="badge best">Best Value</span>
+
+                <h2>Business</h2>
+                <p>For businesses</p>
+
+                <h3 class="price" data-monthly="₹999" data-yearly="₹9,999">
+                    ₹999
+                </h3>
+                <span class="period">/month</span>
+
+                <ul>
+                    <li>✓ Unlimited Projects</li>
+                    <li>✓ Premium Support</li>
+                    <li>✓ 200 GB Storage</li>
+                </ul>
+
+                <button>Choose Plan</button>
+            </article>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
