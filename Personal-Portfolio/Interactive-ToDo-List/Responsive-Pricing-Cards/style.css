@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #222;
+}
+
+.pricing-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.pricing-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.toggle-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.switch {
+    position: relative;
+    width: 55px;
+    height: 30px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #999;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 4px;
+    top: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked + .slider::before {
+    transform: translateX(25px);
+}
+
+.pricing-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px #ccc;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 36px;
+    margin-top: 25px;
+}
+
+.period {
+    color: #666;
+}
+
+.card ul {
+    list-style: none;
+    margin: 25px 0;
+    line-height: 2;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    padding: 6px 12px;
+    background: #222;
+    color: white;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.best {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+
+    .pricing-section h1 {
+        font-size: 32px;
+    }
+
+    .pricing-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
